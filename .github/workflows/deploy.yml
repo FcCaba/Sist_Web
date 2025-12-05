@@ -32,7 +32,7 @@ jobs:
           context: . 
           push: true
           # Asegúrate de que esta etiqueta coincida con la que Render está configurado para usar.
-          tags: ${{ secrets.DOCKER_USER}}/front_next:latest 
+          tags: ${{ secrets.DOCKER_USER}}/frontend_next:latest 
           platforms: linux/amd64
 
     outputs:
