@@ -82,5 +82,3 @@ jobs:
             - Repositorio: ${{ github.repository }}
             - Commit: ${{ github.sha }}
             - Enlace al Log: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-            # Puedes añadir aquí el URL de tu servicio Render si lo tienes en otra secret, por ejemplo:
-            # - URL del Servicio: https://${{ secrets.RENDER_SERVICE_URL }}

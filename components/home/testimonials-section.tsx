@@ -8,7 +8,7 @@ export function TestimonialsSection() {
         "El sistema de distribución ha mejorado significativamente nuestra gestión de inventario de oficina.",
     },
     {
-      company: "Univalle",
+      company: "Global Inc",
       sector: "Sector Financiero",
       initials: "GI",
       testimonial: "Hemos reducido costos y optimizado nuestros procesos de compra de material de oficina.",
