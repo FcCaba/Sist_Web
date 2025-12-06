@@ -15,18 +15,6 @@ on:
       - closed # Solo cuando el PR es cerrado (puede ser fusionado o no)
 
 jobs:
-  # Job de condición: Solo despliega si el Pull Request fue FUSIONADO
-  check-merge:
-    runs-on: ubuntu-latest
-    # CRÍTICO: Eliminar la condición de 'push' aquí y solo enfocarse en el merge del PR.
-    # El flujo solo se activa si el PR fue cerrado Y si fue fusionado.
-    if: github.event_name == 'pull_request' && github.event.pull_request.merged == true
-    outputs:
-      should_deploy: 'true'
-      
-    steps:
-      - name: Verificar Fusión
-        run: echo "Despliegue activado. Se procede con la construcción y el despliegue a PRODUCCIÓN."
 
   ## 1. Job: Construir y Publicar la Solución en Docker
   build-and-push:
