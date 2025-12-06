@@ -15,7 +15,6 @@ on:
       - closed # Solo cuando el PR es cerrado (puede ser fusionado o no)
 
 jobs:
-
   ## 1. Job: Construir y Publicar la Solución en Docker
   build-and-push:
     needs: check-merge
